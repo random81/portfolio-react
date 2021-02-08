@@ -1,0 +1,364 @@
+
+
+html, body, #wrapper, p, #mast, #content, #nav, 
+#header, .pr, #image, .nav, #navb, div#mform, #insr, .pins, .member, .h, .element, .newRow
+.form1, .form2, .form3, input, datalist {padding:0; 
+	margin:0;}
+body {font:75%/1.3 Helvetica, sans-serif;}
+#wrapper {padding:0; 
+	width: 1024px; 
+	margin:0 auto; position:relative;}
+#mast {background-color:#000;
+ height: 649px; 
+ position:relative;}
+.h {color: #FFF; font-size: 3em;
+ margin-left: 30px;
+padding-top: 24px; font-weight: bold;
+letter-spacing: -0.6px;
+}
+
+
+
+
+#header ul {
+padding-bottom: 6px;
+letter-spacing: -1px;
+;}
+
+
+
+#header p {color:#FFF; color: #FFF;
+font-size: 1.1em;
+margin-top: -17px;
+margin-left: 40.4px;
+letter-spacing: -0.4px;}
+
+.pr {color:#E20448; margin-left: 30.2px; font-size: 1.5em; letter-spacing: 1px;}
+
+
+#mast li a {color: #E20448; z-index: 500;}
+#mast li {display: inline; font-size: 1.3em; z-index: 500;}
+#mast li:nth-child(1) {border-right: 1px solid #E20448;
+ padding-right: 8px;font-size: 1.3em;}
+
+ #mast li:nth-child(2) { padding-left: 2px;font-size: 1.3em;}
+
+
+#mast label {
+padding: 0;
+margin-top: 0;
+margin-right: -3.8px;
+display: inline;
+}
+
+#submit {margin-top:2.1px;
+position: absolute;
+height: 18.3px;
+width: 117px;
+border: none;
+}
+
+
+
+#header {position:absolute; 
+top: 10px;
+left: 804.9px;
+z-index: 500;
+}
+
+	input[type="image"] {
+margin-left: 40.4px;
+margin-top: 2.4px;
+}
+
+
+/*
+input[type="text"] {
+position: absolute;
+width: 113px;
+height: 11.7px;
+margin-top: 4.2px;
+}
+*/
+
+#content {
+background: url(../images/body_02.jpg) no-repeat;
+height: 540px;
+position: absolute;
+top: 110px;
+left: 0px;
+width: 1060px;
+}
+
+#image {background: url(../images/chessKnightLogo.png) no-repeat;
+height:145px;
+width:105px;
+position: absolute;
+left: 70px;
+top: 12px;
+}
+.nav {background: url(../images/nav.png) no-repeat; height:29px ;width:179px;
+ color:#FFF; font-size: 1.1em;
+}
+
+#navb {position:absolute; top: 179px;
+left: 38px;}
+
+#navb a{
+	color:white; 
+	text-align: center; 
+	text-decoration: none;
+	line-height: 1.9em;
+
+}
+
+
+
+#navb li {list-style: none; 
+	color:#FFF; 
+	text-align: center; 
+	text-decoration: none;
+	line-height: 1.9em;
+}
+
+
+#navb ul {
+position: absolute;
+top: -12.6px;
+font-size: 1.3em;
+left: -24.1px;
+z-index: 100;
+}
+
+#insr {
+position: absolute;
+margin-top: -494px;
+padding: 531px;
+margin-left: -250px;
+margin-right: 20px;}
+
+.pins {font-size: 1em;}
+#insr h2 {
+margin-bottom: -1px;
+color: red;
+margin-top: 13.6px;
+letter-spacing: 0;
+font-size: 1.6em;
+}
+
+#insr p {font-size: 1em; margin-top: 3.3px;
+}
+
+.member {color: #00C6ff;
+margin-top: -15px;
+position: absolute;
+top: 68.4px;
+right: 333.4px;
+z-index: 200;
+font-size: 1.4em;
+}
+.form1 {border-left: 1px solid #0FF;
+border-top: 1px solid #0FF;
+border-bottom: none;
+height: 396px;
+width: 9.5px;
+position: absolute;
+top: 64.9px;
+right: 472.8px;
+}
+.form2 {border-bottom:  1px solid #0FF;
+	border-top: none; 
+	border-right:none;
+	border-left: none;
+ height: 1px; 
+width: 376.7px;
+position: absolute;
+top: 459px;
+right: 106.3px;
+}
+
+.form3 {border-right: 1px solid #0FF;
+border-bottom: none;
+border-top: 1px solid #0FF;
+height: 396px;
+width: 220.7px;
+position: absolute;
+top: 64.9px;   /*109.1 shift up post positioning change*/
+right: 105.5px; /*35.2* shift right*/
+}
+
+.element{float: left;margin-right: 10px; margin-top: 0.5px;
+/*margin-top: 31px;*/}
+.element label{display: block; margin-bottom:9px; letter-spacing: 1px;
+}
+.element label.gender{display: inline;}
+.element label em{text-decoration: underline; font-style: normal;}
+#content .element input[name="fname"]{width: 158px; /*margin-top: 10px;*/}
+
+#content .element input[name="lname"]{width: 158px; /*margin-top: 10px;*/}
+
+#content .element input[name="address"]{width: 333px; height: 20.5px; margin-bottom: 17.1px; }
+#content .element input[name="city"]{width: 158px;margin-bottom: 5px; height: 18.9px;
+
+/*margin-top: 10px;*/}
+
+#content .element select[name="state"]{
+width: 47px;
+margin-left: 0.6px;
+border: 1px solid #666;
+margin-right: 1.5px;
+margin-top: 2px;
+
+
+ /*margin-top: 10px;*/}
+
+#content .element input[name="zip"]{width: 101.9px; /*margin-top: 10px;*/ height:19px;}
+
+#content .element input[name="email"]{width: 227.7px; margin-bottom: 16.1px;margin-left: -2px;
+
+/*margin-top: 10px;*/}
+
+#content .element input[name="phone"]{width: 96px; /*margin-top: 10px;*/}
+#content .element input[name="datalist"]{width: 148px; /*margin-top: 10px;*/}
+
+#content .element input[name="date_of_birth"]{width: 150px; margin-bottom: 20px; /*margin-top: 10px;*/}
+
+#content .element label[for="city"], .element label[for="state"], .element label[for="zip"] {margin-bottom: 11px;
+margin-top: -3px;
+}
+
+
+label[for="email"] {
+margin-top: 4px;
+}
+
+#content .element label [for="date_of_birth"]{
+display: block;
+margin-bottom: 11px;
+letter-spacing: 1px;
+}
+
+#content .element input#phone {
+width: 99px; margin-bottom: 4px;
+}
+
+body #mform .element input[type="text"], body #mform .element input[type="date"] {padding-left: 1.4px;} 
+
+body #content #mform .element input[type="date"] {padding-left: 0px;
+width: 147.8px;
+margin-right: 2px;
+height: 20px;
+margin-bottom: 18px;
+} 
+
+
+
+.element input[name="datalist"]{margin-left:-2px;}
+.newRow{clear: both;}
+/*label[for=address] {margin-top:-15px; margin-bottom:1px;}*/
+
+
+div#mform {
+position: absolute;
+left: 587px;
+top: 101px;
+font-size: 1.2em;
+}
+
+#content input {
+height: 18px;
+border:1px solid #666;
+margin-bottom: 14px;
+}
+
+.element input[type="submit"] {
+width: 78.3px;
+margin-top: 2px;
+margin-left: -1px;
+padding-top: 1px;
+}
+
+
+#footer {background-color:#000;
+ height: 220.3px;
+  position:relative;}
+
+/*
+#footer {
+background-color: #000;
+height: 222.3px;
+width: 1025px;
+position: absolute;
+top: 648px;
+*/
+
+
+
+
+.insr1 {
+position: absolute;
+top:22.9px;
+padding: 0;
+font-size: 1em;
+left:45.2px;
+font-size: 1em;
+}
+
+.insr1 h2 {margin-bottom: 1px; color: #E20448; font-size: 1.2em; font-weight: 100;}
+.insr1 p {font-size: 1em; color:#FFF;}
+
+.insr2 h2 {margin-bottom: 1px; color: #00C6ff; font-size: 1.2em; font-weight: 100;}
+.insr2 p {font-size: 1em; color:#FFF;margin-right: -170px;}
+
+.insr3 h2 {margin-bottom: 1px; color: #E20448; font-size: 1.2em; font-weight: 100;}
+.insr3 p {font-size: 1em; color:#FFF;}
+
+
+
+.insr2 {
+position: absolute;
+top:22.9px;
+padding: 0;
+font-size: 1em;
+right: 544px;
+font-size: 1em;
+}
+
+.insr3 {
+position: absolute;
+top:22.9px;
+padding: 0;
+font-size: 1em;
+right:42.3px;
+font-size: 1em;
+}
+
+
+
+.insr {
+position: absolute;
+margin-top: -494px;
+padding: 531px;
+margin-left: -250px;
+margin-right: 20px;
+}
+
+#content #mform label[for="phone"]{margin-top:4px;}
+
+#footer .insr1, #footer .insr2, #footer .insr3{top:21.9px;}
+	/*
+
+<input />	
+type	
+Specifies the form element to render.	
+text | password | checkbox | radio | file | hidden | submit | image | button | reset	
+
+
+Always include
+
+
+"submit" for a text-based submit button 
+
+"image" for a graphical submit button (include src and alt attributes too) 
+
+*/

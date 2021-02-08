@@ -1,0 +1,310 @@
+html, body, #wrapper, p, #mast, #content, #nav, 
+#header, .pr, #image, .nav, #navb, div#mform, #insr, .pins, .member, .h, .element, .newRow
+.form1, .form2, .form3, input, datalist {padding:0; 
+	margin:0;}
+body {font:75%/1.3 Helvetica, sans-serif;}
+#wrapper {padding:0; 
+	width: 1024px; 
+	margin:0 auto; position:relative;}
+#mast {background-color:#000;
+ height: 108.4px; 
+ position:relative;}
+.h {color: #FFF; font-size: 3em;
+ margin-left: 30px;
+padding-top: 24px; font-weight: bold;
+letter-spacing: -0.6px;
+}
+
+#header ul {
+letter-spacing: -1px;}
+
+
+
+#header p {color:#FFF; font-size:1.1em; 
+margin-top: -17px;
+	margin-left: 37px;}
+.pr {color:#E20448; margin-left: 30.2px; font-size: 1.5em; letter-spacing: 1px;}
+
+
+#mast li a {color: #E20448;}
+#mast li {display: inline; font-size: 1.3em;}
+#mast li:nth-child(1) {border-right: 1px solid #E20448;
+ padding-right: 5px;font-size: 1.3em;}
+
+ #mast li:nth-child(2) { padding-left: 5px;font-size: 1.3em;}
+
+
+#mast label {
+padding: 0;
+margin-top: 0;
+margin-right: -3.8px;
+display: inline;
+}
+
+#submit {margin-top:2.1px;
+position: absolute;
+height: 18.3px;
+width: 117px;
+border: none;
+}
+
+
+
+#header {position:absolute; 
+top: 6.7px;
+left: 804.9px;
+}
+
+	input[type="image"] {
+margin-left: 38.4px;
+margin-top: 2.4px;
+}
+
+
+/*
+input[type="text"] {
+position: absolute;
+width: 113px;
+height: 11.7px;
+margin-top: 4.2px;
+}
+*/
+
+#content {background:url(../images/body_02.jpg) no-repeat;
+height: 540px;
+}
+#image {background: url(../images/chessKnightLogo.png) no-repeat;
+height:145px;
+width:105px;
+position: absolute;
+left: 70px;
+top: 122px;
+}
+.nav {background: url(../images/nav.png) no-repeat; height:29px ;width:179px;
+ color:#FFF; font-size: 1.1em;
+}
+
+#navb {position:absolute; top: 289px;
+left: 38px;}
+
+#navb a{list-style: none; 
+	color:white; 
+	text-align: center; 
+	text-decoration: none;
+	line-height: 1.9em;
+}
+
+
+li {list-style: none; 
+	color:white; 
+	text-align: center; 
+	text-decoration: none;
+	line-height: 1.9em;
+}
+
+
+#navb ul {
+position: absolute;
+top: -12.4px;
+font-size: 1.3em;
+left: -19.1px;
+}
+
+#insr {
+position: absolute;
+margin-top: -489px;
+padding: 531px;
+margin-left: -250px;
+margin-right: 20px;}
+
+.pins {font-size: 1em;}
+#insr h2 {margin-bottom: 13.4px; color: red;}
+#insr p {font-size: 1em;}
+
+.member {color: #00C6ff;
+margin-top: -15px;
+position: absolute;
+top: 178.4px;
+right: 297.4px;
+z-index: 200;
+font-size: 1.4em;
+}
+.form1 {border-left: 1px solid #00C6ff;
+border-top: 1px solid #00C6ff;
+border-bottom: none;
+height: 396px;
+width: 9.5px;
+position: absolute;
+top: 174px;
+right: 437.6px;
+}
+.form2 {border-bottom:  1px solid #00C6ff;
+	border-top: none; 
+	border-right:none;
+	border-left: none;
+ height: 1px; 
+width: 376.7px;
+position: absolute;
+top: 569.4px;
+right: 71.1px;
+}
+
+.form3 {border-right: 1px solid #00C6ff;
+border-bottom: none;
+border-top: 1px solid #00C6ff;
+height: 396px;
+width: 220.7px;
+position: absolute;
+top: 174px;
+right: 70.3px;
+}
+
+.element{float: left;margin-right: 10px;/*margin-top: 31px;*/}
+.element label{display: block; margin-bottom:11px; letter-spacing: 1px;
+}
+.element label.gender{display: inline;}
+.element label em{text-decoration: underline; font-style: normal;}
+#content .element input[name="fname"]{width: 158px; /*margin-top: 10px;*/}
+
+#content .element input[name="lname"]{width: 158px; /*margin-top: 10px;*/}
+
+#content .element input[name="address"]{width: 333px; height: 20.5px; margin-bottom: 17.1px; }
+#content .element input[name="city"]{width: 158px;margin-bottom: 18.1px;
+/*margin-top: 10px;*/}
+
+#content .element select[name="state"]{width: 46px;
+margin-left: 3.6px; border: 1px solid blue;margin-right: 2.5px;
+
+ /*margin-top: 10px;*/}
+
+#content .element input[name="zip"]{width: 98.9px; /*margin-top: 10px;*/}
+
+#content .element input[name="email"]{width: 227.7px; margin-bottom: 16.1px;
+/*margin-top: 10px;*/}
+
+#content .element input[name="phone"]{width: 96px; /*margin-top: 10px;*/}
+#content .element input[name="datalist"]{width: 148px; /*margin-top: 10px;*/}
+
+#content .element input[name="date_of_birth"]{width: 150px; margin-bottom: 20px; /*margin-top: 10px;*/}
+
+#content .element label[for="city"], .element label[for="state"], .element label[for="zip"] {margin-bottom: 10px;}
+
+#content .element label [for="date_of_birth"]{
+display: block;
+margin-bottom: 11px;
+letter-spacing: 1px;
+}
+
+#content .element input#phone {
+width: 99px;}
+
+body #mform .element input[type="text"], body #mform .element input[type="date"] {padding-left: 3px;} 
+
+body #content #mform .element input[type="date"] {padding-left: 3px; width:147.8px; margin-right: 2px;
+} 
+
+
+
+.element input[name="datalist"]{margin-left:-2px;}
+.newRow{clear: both;}
+/*label[for=address] {margin-top:-15px; margin-bottom:1px;}*/
+
+
+div#mform {
+position: absolute;
+left: 587px;
+top: 209px;
+font-size: 1.2em;
+}
+
+#content input {
+height: 18px;
+border:1px solid blue;
+margin-bottom: 14px;
+}
+
+.element input[type="submit"] {width: 81.3px;}
+
+#footer {background-color:#000;
+ height: 220.3px;
+  position:relative;}
+
+/*
+#footer {
+background-color: #000;
+height: 222.3px;
+width: 1025px;
+position: absolute;
+top: 648px;
+*/
+
+
+
+
+.insr1 {
+position: absolute;
+top:22.9px;
+padding: 0;
+font-size: 1em;
+left:45.2px;
+font-size: 1em;
+}
+
+.insr1 h2 {margin-bottom: 1px; color: red; font-size: 1.2em; font-weight: 100;}
+.insr1 p {font-size: 1em; color:white;}
+
+.insr2 h2 {margin-bottom: 1px; color: blue; font-size: 1.2em; font-weight: 100;}
+.insr2 p {font-size: 1em; color:white;margin-right: -170px;}
+
+.insr3 h2 {margin-bottom: 1px; color: red; font-size: 1.2em; font-weight: 100;}
+.insr3 p {font-size: 1em; color:white;}
+
+
+
+.insr2 {
+position: absolute;
+top:22.9px;
+padding: 0;
+font-size: 1em;
+right: 544px;
+font-size: 1em;
+}
+
+.insr3 {
+position: absolute;
+top:22.9px;
+padding: 0;
+font-size: 1em;
+right:66px;
+font-size: 1em;
+}
+
+
+
+.insr {
+position: absolute;
+margin-top: -494px;
+padding: 531px;
+margin-left: -250px;
+margin-right: 20px;
+}
+
+
+
+#footer .insr1, #footer .insr2, #footer .insr3{top:21.9px;}
+	/*
+
+<input />	
+type	
+Specifies the form element to render.	
+text | password | checkbox | radio | file | hidden | submit | image | button | reset	
+
+
+Always include
+
+
+"submit" for a text-based submit button 
+
+"image" for a graphical submit button (include src and alt attributes too) 
+
+*/

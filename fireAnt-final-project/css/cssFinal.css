@@ -1,0 +1,1349 @@
+@media screen {
+  /* line 38, ../scss/css.scss */
+  li, a, ul, #about1, #text, #circlel,
+  #about2,
+  .black,
+  .orange, #buttona, #social2, #about, #work, #recent, .rcntblk,
+  #buttona, #link2, #link2, .break, #carousel, #tab, .work, #worksec,
+  label, input, body, main, #bg1, #bg2, #line, #about, work,
+  #wrapper, #head_form, #social, #photoshoot, #featured, #image, #bar, #title, #carousel, #links,
+  nav, header, footer, aside #header, #sign, #headerf, #search {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 41, ../scss/css.scss */
+  body {
+    font: 75%/1.3 sans-serif, verdana;
+  }
+  /* line 41, ../scss/css.scss */
+  body li {
+    list-style: none;
+  }
+
+  /* line 44, ../scss/css.scss */
+  #wrapper {
+    width: 1280px;
+    /*making width based on photoshop file width*/
+    margin: 0 auto;
+    position: relative;
+    /*making position relative
+     to allow elements contained within this element to base their position off the centered wrapper */
+  }
+
+  /* line 51, ../scss/css.scss */
+  header {
+    background: repeat-x url(../images/header.jpg);
+    height: 42px;
+    width: 100%;
+  }
+
+ /*path from css file up one direcctory and back down into images directory
+height: 42px; insures the correct height of header width: 100% gives the header image width of the footer which is width of wrapper.
+ */
+  /* line 59, ../scss/css.scss */
+  header li, header ul {
+    display: inline;
+  }
+
+  /*make all labels and input fields line up on the header*/
+  /* line 62, ../scss/css.scss */
+  header a, header li {
+    color: white;
+  }
+
+  /* line 64, ../scss/css.scss */
+  div#head_form {
+    margin-top: -1.4px;
+    margin-left: 160.7px;
+  }
+
+  /*moving the header form*/
+  /* line 69, ../scss/css.scss */
+  ul#sign {
+    font-size: 1.2em;
+    letter-spacing: -1.1px;
+  }
+
+  /* line 74, ../scss/css.scss */
+  ul#headerf {
+    margin-left: 22px;
+  }
+
+  /* line 79, ../scss/css.scss */
+  #headerf label {
+    margin-right: 2px;
+  }
+
+  /* line 83, ../scss/css.scss */
+  header input {
+    width: 102px;
+    height: 24px;
+    padding-left: 6px;
+  }
+
+  /*correcting size of input fields and having to move back 
+  up the inline elements up again after input feild scale change*/
+  /* line 89, ../scss/css.scss */
+  label[for=pass] {
+    margin-left: 3px;
+  }
+
+  /*using selectors to correct distance between the different labels and elements */
+  /* line 91, ../scss/css.scss */
+  header input {
+    font-style: italic;
+    color: black;
+  }
+
+  /* line 92, ../scss/css.scss */
+  header {
+    color: white;
+  }
+
+  /* line 94, ../scss/css.scss */
+  a[href="account.html"] {
+    margin-left: 10px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+  }
+
+  /* line 100, ../scss/css.scss */
+  a[href="account.html"] {
+    margin-left: 5px;
+    background-color: #1f1f1f;
+    border-radius: 3px;
+    padding: 6.7px 25px 6.5px 23.9px;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 1px;
+  }
+
+  /* line 110, ../scss/css.scss */
+  a[href="search.html"] {
+    margin-left: 10px;
+    background-color: #1f1f1f;
+    border-radius: 3px;
+    padding: 5.7px 19px 4.5px 17.9px;
+    text-decoration: none;
+    margin-right: 10px;
+    position: absolute;
+    margin-top: -26px;
+  }
+
+  /* line 123, ../scss/css.scss */
+  input[tabindex="30"] {
+    width: 144px;
+    border-radius: 3px;
+    margin-left: 92px;
+  }
+
+  /* line 127, ../scss/css.scss */
+  label#image {
+    margin-left: 72px;
+  }
+
+  /* line 132, ../scss/css.scss */
+  header input[name=pass] {
+    margin-left: -2px;
+    border-radius: 3px;
+    height: 23px;
+    margin-right: 2px;
+    margin-left: 6px;
+  }
+
+  /* line 140, ../scss/css.scss */
+  header input[name=nickname] {
+    border-radius: 3px;
+    height: 23px;
+    margin-right: 3px;
+  }
+
+  /* line 146, ../scss/css.scss */
+  #search li + li {
+    margin-left: 869px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  /* line 152, ../scss/css.scss */
+  #headerf li + li + li {
+    font-size: .9em;
+    font-weight: bold;
+  }
+
+                                                                              /*
+main {background: no-repeat url(../images/backgroundcopy.gif); display:block; /*recommended for supporting 
+older browsers and this html5 element*/
+  /*}*/
+  /* line 162, ../scss/css.scss */
+  main {
+    background: no-repeat url(../images/backgroundcopy.gif);
+    display: block;
+    width: 1280px;
+    height: 1000px;
+  }
+
+  /* line 171, ../scss/css.scss */
+  footer {
+    background: no-repeat url(../images/backgroundcopy.gif);
+  }
+
+  /*
+  shape 2: This is the line below the header in the psd
+  shape 2 there is a effect and drop shadow on psd on the */
+  /* line 178, ../scss/css.scss */
+  #line {
+    background: no-repeat url(../images/bar_02.png);
+    height: 3px;
+    margin-top: 2px;
+    padding-top: 0;
+    width: 1280px;
+    z-index: 200;
+  }
+
+  /* line 187, ../scss/css.scss */
+  body #logo1 {
+    background: no-repeat url(../images/logo_05_05.png);
+    margin-top: -30px;
+    margin-left: -224px;
+    height: 90px;
+    width: 86px;
+  }
+
+  /* line 194, ../scss/css.scss */
+  nav li {
+    text-decoration: none;
+    display: inline;
+  }
+
+  /*
+#n/*-/2 a{
+  background-color: #1f1f1f;
+  border-radius: 3px;
+  padding: 5.7px 25px 6.5px 23.9px;
+  text-decoration: none;
+ 
+}
+*/
+  /* line 206, ../scss/css.scss */
+  nav {
+    margin-top: 50px;
+    margin-left: 400px;
+    z-index: 300;
+  }
+
+  /* line 213, ../scss/css.scss */
+  ul#nav {
+    margin-left: -35px;
+    margin-top: -5px;
+  }
+
+  /* line 218, ../scss/css.scss */
+  #nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* line 220, ../scss/css.scss */
+  #nav {
+    margin-top: -64px;
+    margin-left: -35px;
+  }
+
+  /* line 223, ../scss/css.scss */
+  body #nav li + li {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    clear: both;
+    letter-spacing: 0px;
+    margin-top: 30px;
+  }
+
+  /* line 232, ../scss/css.scss */
+  body #nav .unit1 li + li {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    clear: both;
+    letter-spacing: 0px;
+    margin-top: 0px;
+  }
+
+  /* line 242, ../scss/css.scss */
+  #nav li:nth-of-type(1) {
+    background-color: #1f1f1f;
+    border-radius: 3px;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -0.5px;
+    width: 116px;
+    height: 27px;
+  }
+
+  /* line 256, ../scss/css.scss */
+  #nav .unit2 li:nth-of-type(1) {
+    background: no-repeat url(../images/button2_08.png);
+    width: 115px;
+    height: 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -0.5px;
+    width: 116px;
+    height: 27px;
+  }
+
+  /* line 271, ../scss/css.scss */
+  #nav .unit3 li:nth-of-type(1) {
+    background: no-repeat url(../images/button2_08.png);
+    width: 115px;
+    height: 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -0.5px;
+    width: 116px;
+    height: 27px;
+  }
+
+  /* line 286, ../scss/css.scss */
+  #nav .unit4 li:nth-of-type(1) {
+    background: no-repeat url(../images/button2_08.png);
+    width: 115px;
+    height: 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -0.5px;
+    width: 116px;
+    height: 27px;
+  }
+
+  /* line 301, ../scss/css.scss */
+  #nav .unit5 li:nth-of-type(1) {
+    background: no-repeat url(../images/button2_08.png);
+    width: 115px;
+    height: 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -0.5px;
+    width: 116px;
+    height: 27px;
+  }
+
+  /* line 319, ../scss/css.scss */
+  .unit {
+    float: left;
+    padding-right: 18.6px;
+  }
+
+  /*
+  #nav li {width:116px; height:27px;}
+  */
+  /* line 325, ../scss/css.scss */
+  .unit1 {
+    float: left;
+    padding-right: 18.6px;
+  }
+
+  /* line 328, ../scss/css.scss */
+  .unit1 a {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 27px;
+  }
+
+  /* line 331, ../scss/css.scss */
+  .unit2 {
+    float: left;
+    padding-right: 18.6px;
+    margin-top: -2px;
+  }
+
+  /* line 336, ../scss/css.scss */
+  .unit2 a {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 26px;
+  }
+
+  /* line 340, ../scss/css.scss */
+  .unit3 {
+    float: left;
+    padding-right: 18.6px;
+    margin-top: -2px;
+    margin-left: -2px;
+  }
+
+  /* line 343, ../scss/css.scss */
+  .unit3 a {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 41px;
+    margin-top: 6px;
+  }
+
+  /* line 347, ../scss/css.scss */
+  .unit4 {
+    float: left;
+    padding-right: 18.6px;
+    margin-top: -2px;
+    margin-left: -1px;
+  }
+
+  /* line 351, ../scss/css.scss */
+  .unit4 a {
+    margin-left: 31px;
+  
+    position: absolute;
+    margin-top: 6px;
+}
+
+  /* line 353, ../scss/css.scss */
+  .unit5 {
+    float: left;
+    padding-right: 18.6px;
+    margin-top: -2px;
+    margin-left: -2px;
+  }
+
+  /* line 359, ../scss/css.scss */
+  .unit a {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+
+  /* line 362, ../scss/css.scss */
+  .unit4 a {
+  }
+
+  /* line 369, ../scss/css.scss */
+  .unit5 a {
+    position: absolute;
+    top: -0.7px;
+    left: 530px;
+  }
+
+  /* line 376, ../scss/css.scss */
+  .unit1, .unit1, .unit2, .unit3, .unit4, .unit5
+  #clear {
+    clear: right;
+  }
+
+  /* line 378, ../scss/css.scss */
+  .clear {
+    clear: both;
+  }
+
+  /* line 380, ../scss/css.scss */
+  nav .unit5 li + li {
+    margin-top: 27.5px;
+    margin-left: 15px;
+    position: absolute;
+  }
+
+  /* line 386, ../scss/css.scss */
+  nav .unit4 li + li {
+    margin-top: 27.5px;
+    margin-left: 15px;
+    position: absolute;
+  }
+
+  /* line 394, ../scss/css.scss */
+  #social {
+    z-index: 400;
+  
+}
+
+  /* line 397, ../scss/css.scss */
+  #social li {
+    float: left;
+    list-style: none;
+  }
+
+  /* line 404, ../scss/css.scss */
+  body #social li:nth-of-type(1) a {
+    background: no-repeat url(../images/facebook.png);
+    width: 21px;
+    height: 16px;
+    position: absolute;
+  }
+
+  /* line 413, ../scss/css.scss */
+  body #social li:nth-of-type(2) a {
+    background: no-repeat url(../images/twitter.png);
+    width: 21px;
+    height: 16px;
+    margin-top: 0;
+    margin-left: 20px;
+    position: absolute;
+  }
+
+  /* line 423, ../scss/css.scss */
+  body #social li:nth-of-type(3) a {
+    background: no-repeat url(../images/skype.png);
+    width: 21px;
+    height: 19px;
+    margin-top: 0px;
+    margin-left: 44px;
+    position: absolute;
+  }
+
+  /* line 434, ../scss/css.scss */
+  body #social li:nth-of-type(5) a {
+    background: no-repeat url(../images/arrow.png);
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    margin-top: 22px;
+    margin-left: -10px;
+  }
+
+  /* line 443, ../scss/css.scss */
+  #social {
+    margin-top: 4px;
+    margin-left: 1031px;
+  }
+
+  /* line 450, ../scss/css.scss */
+  body #social li:nth-of-type(4) {
+    letter-spacing: -0.1px;
+    margin-top: 24.4px;
+    width: 60.7px;
+    font-size: 0.9em;
+    margin-left: -1px;
+  }
+
+  /* line 459, ../scss/css.scss */
+  #social {
+    list-style: none;
+  }
+
+  /* line 461, ../scss/css.scss */
+  #metro {
+    background: no-repeat url(../images/train6.png);
+    width: 447px;
+    height: 285px;
+    margin-top: 85px;
+    margin-left: 161px;
+    z-index: 100;
+  }
+
+  /* line 472, ../scss/css.scss */
+  #bar {
+    background-color: #1f1f1f;
+    width: 429px;
+    height: 31px;
+    margin-top: 0;
+    margin-left: 161px;
+  
+    /*outline: 1px solid red;*/
+}
+
+  /* line 480, ../scss/css.scss */
+  div#radial {
+    padding-top: 7px;
+    margin-left: 22px;
+  }
+
+  /* line 485, ../scss/css.scss */
+  input[type="radio"] {
+    width: 20px;
+    height: 15px;
+    margin-left: -3px;
+  }
+
+  /*Below is a method of making a triangle in css*/
+  /* line 494, ../scss/css.scss */
+  .arrowl {
+    width: 0;
+    height: 0;
+    border-top: 6.25px solid transparent;
+    border-right: 12.5px solid white;
+    border-bottom: 6.25px solid transparent;
+    margin-top: -174px;
+    margin-left: 187px;
+    z-index: 300;
+    /*outline: 1px solid red;*/
+  
+    position: absolute;
+}
+
+  /* line 506, ../scss/css.scss */
+  .arrowr {
+    width: 0;
+    height: 0;
+    border-top: 6.25px solid transparent;
+    border-left: 12.5px solid white;
+    border-bottom: 6.25px solid transparent;
+    margin-top: -175px;
+    margin-left: 551px;
+    position: absolute;
+    z-index: 300;
+  }
+
+  /* line 519, ../scss/css.scss */
+  .arrowc {
+    width: 0;
+    height: 0;
+    border-top: 10.25px solid transparent;
+    border-left: 16.5px solid red;
+    border-bottom: 10.25px solid transparent;
+    margin-top: 24px;
+    margin-left: 495px;
+    position: absolute;
+    z-index: 300;
+  }
+
+  /* line 531, ../scss/css.scss */
+  .arrowb {
+    width: 0;
+    height: 0;
+    border-right: 10.25px solid transparent;
+    border-left: 10.25px solid transparent;
+    border-top: 19.5px solid black;
+    margin-top: -6px;
+    margin-left: 39px;
+    position: absolute;
+    z-index: 300;
+  }
+
+  /* line 543, ../scss/css.scss */
+  #circler {
+    background: no-repeat url(../images/circler1.png);
+    width: 38px;
+    height: 37px;
+    margin-top: -188px;
+    margin-left: 538px;
+    position: absolute;
+    z-index: 200;
+  }
+
+  /*The circles are photoshoped with the arrow taken out of the image and the
+  arrow is a real html arrow to allow for future coding manipulations*/
+  /* line 557, ../scss/css.scss */
+  #circlel {
+    background: no-repeat url(../images/circlel1.png);
+    width: 38px;
+    height: 37px;
+    margin-top: -186px;
+    margin-left: 176px;
+    position: absolute;
+    z-index: 200;
+  }
+
+  /* line 568, ../scss/css.scss */
+  article#photoshoot {
+  }
+
+  /* line 573, ../scss/css.scss */
+  div#featured {
+    margin-top: -1px;
+  }
+
+  /* line 576, ../scss/css.scss */
+  #title {
+    background-color: #0C0C0C;
+    height: 118px;
+    width: 532px;
+    opacity: 0.85;
+    position: absolute;
+    margin-left: 569px;
+    margin-top: -316px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 20px;
+  }
+
+  /* line 588, ../scss/css.scss */
+  #text {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 17px;
+  }
+
+  /* line 594, ../scss/css.scss */
+  h1 {
+    color: #ffffff;
+    margin-top: 31px;
+    font-weight: 100;
+    letter-spacing: -0.7px;
+  }
+
+  /* line 598, ../scss/css.scss */
+  h2 {
+    color: #eb6841;
+    margin-top: -17px;
+    font-weight: 100;
+    letter-spacing: 0.6px;
+    font-size: 1.2em;
+  }
+
+  /* line 602, ../scss/css.scss */
+  #text p {
+    color: #ffffff;
+    margin-top: -5px;
+    padding-right: 70px;
+  }
+
+  /* line 606, ../scss/css.scss */
+  #tab {
+    background-color: #eb6841;
+    height: 23px;
+    width: 75px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 429px;
+    color: white;
+    padding-top: 9px;
+    padding-left: 10px;
+  }
+
+  /* line 619, ../scss/css.scss */
+  #carousel li {
+    float: left;
+    list-style-type: none;
+  }
+
+  /* line 622, ../scss/css.scss */
+  .Shape_14_copy_9 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+    opacity: 0.19;
+    position: absolute;
+    left: 995px;
+    top: 313px;
+    width: 97px;
+    height: 70px;
+    z-index: 92;
+  }
+
+  /* line 636, ../scss/css.scss */
+  #carousel li:first-of-type {
+    background: no-repeat url(../images/bridge.jpg);
+    width: 92px;
+    height: 66px;
+    border: 1px solid black;
+  }
+
+  /* line 642, ../scss/css.scss */
+  #carousel li:nth-of-type(2) {
+    background: no-repeat url(../images/sea.jpg);
+    width: 92px;
+    height: 66px;
+    border: 1px solid black;
+  }
+
+  /* line 647, ../scss/css.scss */
+  #carousel li:nth-of-type(3) {
+    background: no-repeat url(../images/woods.jpg);
+    width: 92px;
+    border: 1px solid black;
+    height: 66px;
+  }
+
+  /* line 652, ../scss/css.scss */
+  #carousel li:nth-of-type(4) {
+    background: no-repeat url(../images/darkedinburgh_vicst.jpg);
+    width: 92px;
+    height: 66px;
+    border: 1px solid black;
+  }
+
+  /* line 657, ../scss/css.scss */
+  #carousel li:nth-of-type(5) {
+    background: no-repeat url(../images/smalldog.jpg);
+    width: 92px;
+    height: 66px;
+    border: 1px solid black;
+  }
+
+  /* line 664, ../scss/css.scss */
+  #carousel {
+    margin-left: 604px;
+    margin-top: -180px;
+  }
+
+  /* line 672, ../scss/css.scss */
+  #carousel li {
+    margin-right: 4px;
+  }
+
+  /* line 674, ../scss/css.scss */
+  #links {
+    margin-left: 605px;
+    margin-top: 82px;
+    width: 525px;
+  }
+
+  /* line 680, ../scss/css.scss */
+  #links ul {
+    list-style: none;
+    padding-right: 29px;
+    margin-top: -14px;
+  }
+
+  /* line 686, ../scss/css.scss */
+  #links li {
+    padding-top: 6px;
+    letter-spacing: -0.1px;
+  }
+
+  /* line 691, ../scss/css.scss */
+  #links a {
+    color: black;
+  }
+
+  /* line 694, ../scss/css.scss */
+  div#linksl {
+    letter-spacing: -0.1px;
+  }
+
+  /* line 698, ../scss/css.scss */
+  #link2 {
+    float: left;
+  }
+
+  /* line 700, ../scss/css.scss */
+  .about .break hr {
+    width: 408px;
+    float: left;
+  }
+
+  /* line 701, ../scss/css.scss */
+  .break h2 {
+    padding: 10px 10px;
+    float: left;
+    letter-spacing: -0.6px;
+    color: black;
+    margin-bottom: 15px;
+    font-weight: bolder;
+  
+    margin-left: -5px;
+}
+
+  /* line 706, ../scss/css.scss */
+  .about {
+    margin-left: 161px;
+    font-size: 1.7em;
+    margin-top: 30px;
+    margin-bottom: -55px;
+  
+}
+
+  /* line 713, ../scss/css.scss */
+  #about1 h3 {
+    font-size: 1.6em;
+    margin-right: 0px;
+  }
+
+  /* line 720, ../scss/css.scss */
+  #about2 h3 {
+    font-size: 1.6em;
+    padding: 0;
+    padding-right: 270px;
+    margin-top: -70px;
+  }
+
+  /*
+  
+  .arrow2 {  width: 0;
+    height: 0;
+    border-top: 10.25px solid transparent;
+    border-right: 18.5px solid #0C0C0C;
+    border-bottom: 10.25px solid transparent;
+    margin-top: 11px;
+    margin-left: 571px;
+    z-index: 200;
+    position: absolute;
+    opacity: 0.85;
+  }
+  */
+  /*opacaity and color of the large bar/banner named #title was approximated
+  using pixel perfect*/
+  /* a huge issue right now is the fact that it appears
+  that the banner and triangle wedge to its left are actually one 
+  object, with a continuous grainy background in the back.
+  right now you dont have the grainy background in the back of the
+  triangle which is a problems.  The quick and dirty way to fix this
+  would be to to photoshop this segement, and place it in theire with a higher z-index. also you have lost the top line some where */
+  /* line 753, ../scss/css.scss */
+  article:nth-of-type(2) {
+    margin-top: 41px;
+  }
+
+  /* line 756, ../scss/css.scss */
+  .black {
+    position: absolute;
+  }
+
+  /* line 757, ../scss/css.scss */
+  .orange {
+    position: absolute;
+  }
+
+  /* line 762, ../scss/css.scss */
+  #buttona ul li {
+    list-style: none;
+    margin-left: 9px;
+  }
+
+  /* line 767, ../scss/css.scss */
+  #about2 p:first-of-type {
+    margin-top: -9px;
+  }
+
+  /* line 772, ../scss/css.scss */
+  #about1 p:first-of-type {
+    margin-top: -10px;
+  }
+
+  /* line 776, ../scss/css.scss */
+  #about1 span, #about2 span {
+    color: #eb6841;
+  }
+
+  /* line 780, ../scss/css.scss */
+  #nav2 a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* line 782, ../scss/css.scss */
+  #nav2 {
+    margin-top: 198px;
+    margin-left: 509px;
+  }
+
+  /* line 786, ../scss/css.scss */
+  body #nav2 li + li {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    clear: both;
+    letter-spacing: 0px;
+    margin-top: 30px;
+  }
+
+  /* line 796, ../scss/css.scss */
+  div#nav2 .unit1 {
+    list-style: none;
+  }
+
+  /* line 801, ../scss/css.scss */
+  body #nav2 li + li {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    clear: both;
+    letter-spacing: 0px;
+    margin-top: 30px;
+  }
+
+  /* line 810, ../scss/css.scss */
+  body #nav2 .unit1 li + li {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    clear: both;
+    letter-spacing: 0px;
+    margin-top: 0px;
+  }
+
+  /* line 820, ../scss/css.scss */
+  #nav2 li:nth-of-type(1) {
+    background-color: #1f1f1f;
+    border-radius: 3px;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -0.5px;
+    width: 116px;
+    height: 27px;
+    padding-right: 14px;
+  }
+
+  /* line 836, ../scss/css.scss */
+  #buttona li:nth-of-type(2) {
+    background: no-repeat url(../images/redbutton.png);
+    width: 115px;
+    height: 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -0.5px;
+    width: 130.6px;
+    height: 28px;
+    margin-top: -4px;
+    margin-left: 14px;
+    /*outline: 1px solid black;*/
+  }
+
+  /* line 854, ../scss/css.scss */
+  #buttona #social2 li:nth-of-type(2) {
+    background: no-repeat url(../images/facebook.png);
+    width: 115px;
+    height: 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: -0.5px;
+    width: 116px;
+    height: 94px;
+  }
+
+  /*
+  <div  id="buttona">
+          <ul class="unit1">
+              <li><a href="">Portfolio</a></li>
+               <li><a href="">More info..</a></li>
+          </ul>
+      <div id="social2">
+          <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+          </ul>
+      </div>
+      </div>
+  This is the original html structure before implementing floats 3.29
+  */
+  /* line 883, ../scss/css.scss */
+  #buttona {
+    list-style: none;
+    margin-top: -4px;
+    margin-left: 598px;
+  }
+
+  /* line 893, ../scss/css.scss */
+  #about1 {
+    float: left;
+    margin-top: 36px;
+    margin-left: 161px;
+    width: 443px;
+  }
+
+  /* line 899, ../scss/css.scss */
+  #about2 {
+    margin-left: 604px;
+    padding-right: 180px;
+    margin-bottom: 19px;
+  
+    margin-top: 71px;
+}
+
+  /* line 907, ../scss/css.scss */
+  #about1 p:nth-of-type(3) {
+    margin-top: 13.4px;
+  }
+
+  /* line 912, ../scss/css.scss */
+  #buttona li:nth-of-type(1) {
+    background-color: black;
+    width: 131px;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    float: left;
+    height: 17px;
+    margin-left: 3px;
+    margin-top: -1px;
+  }
+
+  /* line 925, ../scss/css.scss */
+  #buttona a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* line 929, ../scss/css.scss */
+  #buttona span {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 39px;
+  }
+
+  /* line 935, ../scss/css.scss */
+  #social2 li {
+    float: left;
+    /*outline: 3px solid red;*/
+  }
+
+  /* line 8, ../scss/css.scss */
+  /* line 942, ../scss/css.scss */
+  article #work {
+    margin-left: 8px;
+    margin-top: 70px;
+  }
+
+  /* line 9, ../scss/css.scss */
+  /* line 947, ../scss/css.scss */
+  article #work li:nth-of-type(1) {
+    width: 100px;
+    height: 22px;
+    width: 100px;
+    background-color: red;
+  }
+
+  /* line 10, ../scss/css.scss */
+  /* line 954, ../scss/css.scss */
+  article #work li:nth-of-type(2) {
+    background: no-repeat url("../images/");
+    height: 82px;
+    background-color: black;
+    width: 100px;
+  }
+
+  /* line 11, ../scss/css.scss */
+  /* line 961, ../scss/css.scss */
+  article #work li:nth-of-type(3) {
+    padding-left: 10px;
+  }
+
+  /* line 12, ../scss/css.scss */
+  /* line 965, ../scss/css.scss */
+  article #work li:nth-of-type(4) {
+    background: no-repeat url("../images/button2_08.png");
+  }
+
+  /* line 16, ../scss/css.scss */
+  /* line 971, ../scss/css.scss */
+  article + article + article {
+    margin-top: 8px;
+  }
+}
+/* line 978, ../scss/css.scss */
+#buttona, #social2, #about, #work {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 982, ../scss/css.scss */
+#worksec {
+  margin-left: 148px;
+  clear: both;
+}
+
+/* line 985, ../scss/css.scss */
+article .work {
+  float: left;
+  margin-left: 12px;
+  margin-top: -6px;
+}
+/* line 986, ../scss/css.scss */
+article .work a {
+  color: white;
+  text-decoration: none;
+}
+/* line 990, ../scss/css.scss */
+article .work li:nth-of-type(1) {
+  width: 148px;
+  height: 22px;
+  background-color: red;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-radius-top-left: 5px;
+  border-radius-top-right: 5px;
+}
+/* line 991, ../scss/css.scss */
+article .work li:nth-of-type(1) span {
+  color: white;
+  height: 23px;
+  background-color: red;
+  text-align: center;
+  padding-top: 4px;
+  display: block;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-radius-top-left: 5px;
+  border-radius-top-right: 5px;
+}
+/* line 998, ../scss/css.scss */
+article .work li:nth-of-type(2) {
+  background: no-repeat url("../images/");
+  height: 82px;
+  background-color: black;
+  width: 148px;
+}
+/* line 999, ../scss/css.scss */
+article .work li:nth-of-type(3) {
+  width: 149.1px;
+  margin-left: 1px;
+  margin-top: 6px;
+  letter-spacing: -0.7px;
+  line-height: 1.2em;
+}
+/* line 1004, ../scss/css.scss */
+article .work li:nth-of-type(4) {
+  background: no-repeat url("../images/workred.png");
+  height: 39px;
+  padding-left: 41px;
+  padding-top: 6px;
+  margin-top: 7px;
+}
+
+/* line 1015, ../scss/css.scss */
+article + article + article {
+  margin-top: 8px;
+}
+/* line 1016, ../scss/css.scss */
+article + article + article + article .about {
+  margin-top: 15px;
+}
+/* line 1016, ../scss/css.scss */
+article + article + article #recent {
+  margin-left: 158px;
+  margin-top: 60px;
+  clear: both;
+}
+/* line 1017, ../scss/css.scss */
+article + article + article #recent .rcntblk {
+  float: left;
+  margin-right: 11px;
+}
+/* line 1020, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(1) span {
+  display: block;
+  width: 198.9px;
+  height: 40px;
+  padding-left: 19px;
+  padding-top: 11px;
+  line-height: 1.9em;
+  font-size: 0.8em;
+  letter-spacing: 1.2px;
+}
+/* line 1031, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(5) span {
+  display: block;
+  width: 223px;
+  height: 40px;
+  padding-left: 0;
+  padding-top: 8px;
+  line-height: 1.3em;
+  font-size: 0.8em;
+  margin-left: 3.5px;
+}
+/* line 1043, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(3) {
+  width: 99px;
+  margin-left: -1px;
+  height: 29px;
+  float: left;
+  background-color: orange;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+/* line 1053, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(4) {
+  width: 129px;
+  height: 21px;
+  padding-top: 7px;
+  background-color: black;
+  margin-left: 100px;
+  margin-top: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 1060, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(4) span {
+  height: 10px;
+  width: 20px;
+}
+/* line 1060, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(4) span + span {
+  color: white;
+  margin-top: -22.4px;
+  margin-left: 53.6px;
+  font-size: 0.8em;
+}
+/* line 1065, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(3) span {
+  width: 4px;
+  height: 5px;
+  color: white;
+  float: left;
+  margin-top: 8px;
+  margin-left: 19px;
+}
+/* line 1075, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(2) {
+  width: 229px;
+  height: 165px;
+  background-color: black;
+}
+/* line 1080, ../scss/css.scss */
+article + article + article #recent li:nth-of-type(1) {
+  background-color: #222121;
+  width: 229px;
+  height: 54px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-radius-top-left: 5px;
+  border-radius-top-right: 5px;
+  color: white;
+}
+
+/* line 1083, ../scss/css.scss */
+header input[name="nickname"] {
+  margin-left: 8px;
+}
+
+/* line 1085, ../scss/css.scss */
+footer {
+  background-color: #282828;
+  opacity: .5;
+  clear: left;
+}
+/* line 1085, ../scss/css.scss */
+footer #foot {
+  background-color: black;
+  height: 150px;
+}
+
+/* line 1087, ../scss/css.scss */
+body {
+  background: repeat url(../images/backgroundcopy.gif);
+}
+
+
+#control {margin-top:1px; margin-left:10px;}

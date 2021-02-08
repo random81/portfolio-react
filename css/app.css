@@ -1,0 +1,653 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);body .navbar-brand {
+  float: none;
+}
+
+#bs-example-navbar-collapse-1 {
+  padding-top: 30px;
+}
+
+#terminal ::-moz-selection { /* Code for Firefox */
+  color: blue;
+  background: red;
+}
+
+#terminal ::selection {
+  color: blue; 
+  background: red;
+}
+.container-fluid{
+  margin-right: 0px; 
+  margin-left: 0px;
+}
+
+#webImageTwo {
+  margin-top: -801px;
+  position: absolute;
+  -webkit-filter: opacity;
+          filter: opacity;
+  opacity: 0.5;
+}
+
+.head2 {
+  margin: 0 auto;
+}
+
+.listLinks a {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.imageryProject {
+  height: 235px;
+  background-color: gray;
+}
+
+a#kill {
+  /* margin: 0 auto; */
+  width: 100%;
+}
+
+.padderBox {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.padderBox:nth-of-type(2) {
+  background-color: gray;
+}
+
+.padderBox:nth-of-type(5) {
+  background-color: gray;
+}
+
+.centerText {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.killImage .imageryProject #kill {
+  margin: 0 auto;
+  display: block;
+  /* max-width: 408px; */
+  /* max-height: 295px; */
+  /* width: auto; */
+  /* height: auto; */
+  color: white;
+  text-align: center;
+  /* margin-top: 115px; */
+  /* margin-left: 210px; */
+  position: relative;
+}
+
+.listLinks a:nth-child(even) {
+  background-color: gray;
+  color: white;
+}
+
+.listLinks h1 {
+  text-align: center;
+}
+
+.killImage #kill {
+  margin: 0 auto;
+  display: block;
+  max-width: 408px;
+  max-height: 295px;
+  width: auto;
+  height: auto;
+}
+
+.centerFinal {
+  background: url(/images/proj3_fireAntFinalposthalfed.jpg) no-repeat center;
+  width: 411px;
+  height: 700px;
+}
+
+body nav {
+  background-image: url("/portfolio-reacts/images/nav_bkgnd.png");
+}
+
+body #terminal textarea {
+  font-family: 'white_rabbitregular', Arial, sans-serif;
+}
+
+body {
+  max-width: 1019px;
+  margin: 0 auto;
+}
+
+.navbar-fixed-top {
+  margin: 0 auto;
+  max-width: 1019px;
+}
+
+body .icon-bar {
+  background-color: white;
+}
+
+body textarea {
+  overflow: auto;
+  width: 100%;
+  height: 134px;
+}
+
+body header {
+  background-color: #1d949f;
+  height: 133px;
+}
+
+body .navbar-nav li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 22px;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'white_rabbitregular';
+  src: url("../../fonts/whitrabt-webfont.eot");
+  src: url("../../fonts/whitrabt-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/whitrabt-webfont.woff") format("woff"), url("../../fonts/whitrabt-webfont.ttf") format("truetype"), url("../../fonts/whitrabt-webfont.svg#white_rabbitregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body textarea {
+  font-family: 'white_rabbitregular', Arial, sans-serif;
+  width: 99.6%;
+  overflow: hidden;
+  height: 206.5px;
+  background-color: black;
+  color: #1978E4;
+  font-size: 18px;
+  cursor: crosshair;
+  padding-top: 30px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid black;
+  border-top: 6.9px solid black;
+  z-index: 500;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.layer:nth-of-type(1) div:nth-child(odd) {
+  width: 12.5%;
+  height: 210px;
+  background-color: #89E4EC;
+  outline: 3px solid #89E4EC;
+  float: left;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.layer:nth-of-type(1) div:nth-child(even) {
+  width: 12.5%;
+  height: 210px;
+  background-color: #5FD3DD;
+  outline: 3px solid #5FD3DD;
+  float: left;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.layer:nth-of-type(2) div:nth-child(odd) {
+  width: 12.5%;
+  height: 210px;
+  background-color: #37B1BC;
+  outline: 3px solid #37B1BC;
+  float: left;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.layer:nth-of-type(2) div:nth-child(even) {
+  width: 12.5%;
+  height: 210px;
+  background-color: #4CBFC9;
+  outline: 3px solid #4CBFC9;
+  float: left;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.layer:nth-of-type(3) div:nth-child(odd) {
+  width: 12.5%;
+  height: 210px;
+  background-color: #26A1AC;
+  outline: 3px solid #26A1AC;
+  float: left;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.layer:nth-of-type(3) div:nth-child(even) {
+  width: 12.5%;
+  height: 210px;
+  background-color: #138A95;
+  outline: 3px solid #138A95;
+  float: left;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.layer:nth-of-type(4) div:nth-child(odd) {
+  width: 12.5%;
+  height: 210px;
+  background-color: #006E78;
+  outline: 1px solid #006E78;
+  outline-bottom: 0px;
+  float: left;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+.layer:nth-of-type(4) div:nth-child(even) {
+  width: 12.5%;
+  height: 210px;
+  background-color: #03808B;
+  outline: 1px solid #03808B;
+  outline-bottom: 0px;
+  float: left;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+}
+
+#castle {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 600;
+}
+
+#castle img {
+  width: 100%;
+  height: 100%;
+  /* max-height: 680px; */
+  /* max-width: 680px; */
+}
+
+.castleA {
+  max-width: 65%;
+  margin: 0 auto;
+  /*    margin-top: 18%;*/
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 25%;
+  position: absolute;
+}
+
+nav {
+  z-index: 1000;
+}
+
+#landscape {
+  position: relative;
+  z-index: 500;
+  background: url("/portfolio-reacts/images/castle copy.png") no-repeat bottom;
+  background-size: 60%;
+  height: auto;
+  width: 100%;
+}
+
+footer p { 
+  color: white;
+  text-align: center;
+}
+.foot p {
+    text-align: center;
+}
+.foot {
+    height: 120px;
+    background-color: black;
+    padding: 200px;
+}
+
+#landscape .row .layer div {
+  z-index: 10;
+  position: relative;
+}
+
+#landscape .row:last-of-type {
+  outline: 10px solid black;
+}
+
+#land {
+  background-color: #5FD3DD;
+}
+
+#dragonOuter img {
+  /*
+    background: url("../images/might_Dragon.png") center no-repeat;
+    padding-top: 750px;
+    /* margin-left: -170px; */
+  /*  background-size: 33%;
+      width: 100%;
+      height: 0%;
+
+
+      /* padding-top: 90px; */
+  width: 100%;
+  height: 100%;
+  max-height: 445px;
+  max-width: 445px;
+  cursor: pointer;
+}
+
+#dragonOuter {
+  margin: 0 auto;
+  max-height: 445px;
+  max-width: 445px;
+}
+
+#dragonGround {
+  margin-top: -21px;
+  width: 35%;
+  height: 35%;
+  margin: 0 auto;
+}
+
+#challengeHeader h2 {
+  font-size: 24px;
+  color: white;
+  margin: 0px;
+}
+
+#challengeHeader h3 {
+  font-size: 42.6px;
+  color: #F26522;
+  padding-bottom: 33px;
+  margin-bottom: -23px;
+}
+
+.clear {
+  clear: both;
+}
+
+div#challengeHeader {
+  position: relative;
+  margin: 0 auto;
+  /* width: 55px; */
+  /* height: 55px; */
+  text-align: center;
+  width: 100%;
+  background-color: #5FD3DD;
+}
+
+#challengeHeader2 h2 {
+  font-size: 24px;
+  color: white;
+  margin: 0px;
+  padding-top: 40px;
+}
+
+#challengeHeader2 h3 {
+  font-size: 42.6px;
+  color: #45CAAC;
+  margin-bottom: 0px;
+}
+
+div#challengeHeader2 {
+  z-index: 110;
+  position: relative;
+  margin: 0 auto;
+  /* width: 55px; */
+  /* height: 55px; */
+  text-align: center;
+  width: 100%;
+  background-color: #F26522;
+}
+
+h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.tab {
+  position: relative;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 55px;
+  height: 55px;
+  /* text-align: center; */
+  margin-bottom: -31.1px;
+  z-index: 130;
+  background-color: #F26522;
+}
+
+div#vs {
+  padding-top: 5px;
+  font-size: 27px;
+  margin: 0 auto;
+  width: 24px;
+  font-weight: 800;
+}
+
+#vs {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+#land h2, #land h3, #lava h3 {
+  text-align: center;
+}
+
+.appOne p {
+  outline: 1px solid white;
+  text-align: center;
+  padding: 10%;
+  width: 50%;
+}
+
+#devSection .row {
+  margin-left: -15px;
+  margin-right: -15px;
+  /*background-color: black;*/
+  background: url("../images/backgroundDevelopment.png") center no-repeat;
+}
+
+#Lets h2 {
+  position: absolute;
+  z-index: 10000000;
+  margin-top: 36%;
+}
+
+#Lets h2 + h2 {
+  position: absolute;
+  z-index: 10000000;
+  margin-top: 47%;
+}
+
+/*
+
+#lava h2  {
+    font-size: 24px;
+    color: white;
+    padding-top: 107px;
+}
+*/
+#Lets {
+  color: white;
+}
+
+#webWitchBkgrnd {
+  margin-bottom: -400px;
+}
+
+#lava h3 {
+  font-size: 42.6px;
+  color: #45CAAC;
+}
+
+div#lava {
+  background-color: #F26522;
+}
+
+#Champion {
+  background: url("/portfolio-reacts/images/figure_copy.png") center no-repeat;
+  background-size: 30%;
+  background-color: #F26522;
+}
+
+li {
+  list-style: none;
+}
+
+div#boxB {
+  z-index: 120;
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  /*give this css the margin top for the inventory box*/
+}
+
+#boxB ul:nth-of-type(1) {
+  margin: 0 auto;
+}
+
+#boxB ul {
+  background-image: url("/portfolio-reacts/images/inv_bkgnd.png");
+  float: left;
+  /* border: 10px solid white; */
+  font-size: 23px;
+  background-color: #132229;
+  /*give this css the height for the box*/
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#boxB ul + ul li:nth-of-type(1) {
+  margin-top: 232px;
+}
+
+#boxB ul + ul li {
+  margin-left: 10px;
+}
+
+#boxB ul {
+  display: none;
+}
+
+#dragonMini {
+  background: url("../images/might_dragon2.png") center no-repeat;
+  background-size: 100%;
+  /* background-color: white; */
+  float: left;
+  height: 217px;
+  width: 127px;
+  margin-top: 100px;
+}
+
+.imagery {
+  margin: 0 auto;
+  max-width: 408px;
+}
+
+.dragonMini {
+  background: url("../images/Might_Dragon2a.png") center no-repeat;
+  display: inline;
+  background-size: 80%;
+  /* background-color: white; */
+  height: 201px;
+  width: 97px;
+  margin-top: 130px;
+  float: left;
+}
+
+#miniMe {
+  background: url("../images/knight%20copy2a.png") center no-repeat;
+  background-size: 80%;
+  height: 60px;
+  width: 70px;
+  float: left;
+  margin-top: 200px;
+}
+
+.miniMe {
+  background: url("../images/knight%20copy2a.png") center no-repeat;
+  display: inline;
+  background-size: 80%;
+  height: 40px;
+  width: 50px;
+  float: left;
+  margin-top: 223px;
+}
+
+#footBox {
+  width: 271.2px;
+  margin: 0 auto;
+}
+
+body footer {
+  height: 150px;
+  background-color: #0f171b;
+}
+
+body #footer h3 {
+  color: #1978E4;
+  padding: 75px 0;
+  margin: 0px;
+}
+
+#boxA ul:nth-of-type(2) {
+  /*  display:none;*/
+}
+
+div#boxA {
+  color: white;
+  /* position: relative; */
+  /* margin-left: 50.1%; */
+  /* margin-top: -519px; */
+  font-size: 14px;
+  /* margin: 0 auto; */
+  /* width: 10px; */
+  /* align-items: center; */
+  text-align: center;
+  width: 100%;
+}
+
+#boxA ul:nth-of-type(1) {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#boxA img {
+  position: relative;
+  z-index: 130;
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+}
+
+#boxA ul:nth-of-type(2) {
+  background-image: url("../images/inv_bkgnd.png");
+  padding-top: 18px;
+  float: left;
+  margin-top: -293.7px;
+  margin-left: -101%;
+  /* border: 10px solid white; */
+  font-size: 23px;
+  height: 813.6px;
+  background-color: #132229;
+}
+
+#boxA ul + ul li:nth-of-type(1) {
+  margin-top: 232px;
+}
+
+#boxA ul + ul li {
+  margin-left: 10px;
+}
+
+body .navbar-brand > img {
+  margin-left: 20px;
+}
+
+.navbar-right {
+  margin-right: 20px;
+}
