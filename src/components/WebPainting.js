@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Foot from './Foot';
 import proj3_fireAntFinalposthalfed from '../../images/proj3_fireAntFinalposthalfed.jpg';
 import ThreeBucket_fireAntK2 from '../../images/ThreeBucket_fireAntK2.jpg';
-import fireAntK_overTheMoon3b from '../../images/fireAntK_overTheMoon3b.jpg';
+import fireAntK_overTheMoon3b from '../../images/fireAntK_overTheMoon3.jpg';
 import HTMLemail2 from '../../images/HTMLemail2.jpg';
 import BannerAd2_fireAntK from '../../images/BannerAd2_fireAntK.jpg';
 import index_fireAntK2 from '../../images/index_fireAntK2.jpg';
@@ -14,10 +14,11 @@ import smartphoneLandscape2_fireAntK from '../../images/smartphoneLandscape2_fir
 import smartphonePortrait_fireAntK2 from '../../images/smartphonePortrait_fireAntK2.jpg';
 
 const WebWitchcraft = (props) => {
+  const terminalMessage = 'Here are some samples of my web design. ';
   return (
     <div>
       <Container>
-        <TerminalAnimated terminalText="Here are some samples of my web design. " />
+        <TerminalAnimated terminalText={terminalMessage} />
         <center>
           <h1>Design Projects</h1>
           <h3>Non-commerical Projects</h3>

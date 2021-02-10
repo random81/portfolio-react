@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Container,
   Row,
@@ -32,9 +32,9 @@ const App = (props) => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="mr-auto">
-                        <Nav.Link href="./"><img class="center-block" src={homeSelectedIMG} alt="home" width="29" height="25" /><label>Home Castle</label></Nav.Link>
-                        <Nav.Link href="./WebWitchcraft"><img class="center-block" src={webGlobIMG} alt="webWitchraft" width="29" height="25" /><label>Web Witchcraft</label></Nav.Link>
-                        <Nav.Link href="./WebPaintings"><img class="center-block" src={webpaintIMG} alt="webPaintings" width="29" height="25" /><label>Web Paintings</label></Nav.Link>
+                        <Link to="./"><img class="center-block" src={homeSelectedIMG} alt="home" width="29" height="25" /><label>Home Castle</label></Link>
+                        <Link to="./webwitchcraft"><img class="center-block" src={webGlobIMG} alt="webWitchraft" width="29" height="25" /><label>Web Witchcraft</label></Link>
+                        <Link to="./webpaintings"><img class="center-block" src={webpaintIMG} alt="webPaintings" width="29" height="25" /><label>Web Paintings</label></Link>
                       </Nav>
                     </Navbar.Collapse>
                   </Navbar>
@@ -44,9 +44,9 @@ const App = (props) => {
           </Container>
         </div>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/WebWitchcraft" component={WebWitchcraft} />
-          <Route path="/WebPaintings" component={WebPaintings} />
+          <Route exact path="/portfolio-react/" component={Home} />
+          <Route path="/portfolio-react/webwitchcraft" component={WebWitchcraft} />
+          <Route path="/portfolio-react/webpaintings" component={WebPaintings} />
         </Switch>
       </div>
   );

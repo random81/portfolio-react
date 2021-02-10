@@ -21,7 +21,7 @@ const config = {
   output: {
     path: path.join(CURRENT_WORKING_DIR, '/dist'),
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: '/portfolio-react/',
   },
   module: {
     rules: [
@@ -78,6 +78,9 @@ const config = {
     new CopyPlugin({
       patterns: [
         { from: './fireAnt**/**', to: './' },
+        { from: './index.html', to: './index.html' },
+        { from: './webpaintings/**', to: './' },
+        { from: './webwitchcraft/**', to: './' },
       ],
     }),
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),

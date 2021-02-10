@@ -253,14 +253,19 @@ footer p {
     text-align: center;
 }
 
+
 .foot p {
+    width: 100%;
     text-align: center;
 }
 
 .foot {
-    height: 120px;
+    height: 5.33em;
     background-color: black;
-    padding: 200px;
+}
+
+.container .container {
+    background-color: black;
 }
 
 #landscape .row .layer div {

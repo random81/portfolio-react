@@ -14,10 +14,11 @@ import sass2 from '../../images/sass2.jpg';
 import final2 from '../../images/final2.jpg';
 
 const WebWitchcraft = (props) => {
+  const terminalMessage = 'Here are some samples of my web developement. ';
   return (
     <div>
       <Container>
-        <TerminalAnimated terminalText="Here are some samples of my web developement. " />
+        <TerminalAnimated terminalText={terminalMessage} />
         <center><h1>Web Sites</h1>
           <h3>Non-commerical Projects:</h3>
         </center>
@@ -48,14 +49,14 @@ const WebWitchcraft = (props) => {
           <div className="col-sm-12 col-md-6">
             <h2>Diagnostic project</h2>
             <div className="imagery">
-              <a href="/fireAnt-diagnostic-project/index.html"><img src={islandProject} height="288" width="408" /></a>
+              <a href="/portfolio-react/fireAnt-diagnostic-project/index.html"><img src={islandProject} height="288" width="408" /></a>
             </div>
           </div>
           <div className="col-sm-12 col-md-6">
             <h2>Positioning project</h2>
 
             <div className="imagery">
-              <a href="/fireAnt-positioning-project/index.html"><img src={position1From} height="288" width="408" /></a>
+              <a href="/portfolio-react/fireAnt-positioning-project/index.html"><img src={position1From} height="288" width="408" /></a>
             </div>
           </div>
         </div>
@@ -63,13 +64,13 @@ const WebWitchcraft = (props) => {
           <div className="col-sm-12 col-md-6">
             <h2>Elastic project</h2>
             <div className="imagery">
-              <a href="/fireAnt-elastic-project/index.html"><img src={healthFlex} height="288" width="408" /></a>
+              <a href="/portfolio-react/fireAnt-elastic-project/index.html"><img src={healthFlex} height="288" width="408" /></a>
             </div>
           </div>
           <div className="col-sm-12 col-md-6">
             <h2>HTML email project</h2>
             <div className="imagery">
-              <a href="/fireAnt-htmlemail-project/index.html"><img src={htmlEmail1} height="288" width="408" /></a>
+              <a href="/portfolio-react/fireAnt-htmlemail-project/index.html"><img src={htmlEmail1} height="288" width="408" /></a>
             </div>
           </div>
         </div>
@@ -78,13 +79,13 @@ const WebWitchcraft = (props) => {
             <h2>HTML email project</h2>
             <h2>Form project</h2>
             <div className="imagery">
-              <a href="/fireAnt-form-project/index.html"><img src={imagePixel} height="288" width="408"></img></a>
+              <a href="/portfolio-react/fireAnt-form-project/index.html"><img src={imagePixel} height="288" width="408"></img></a>
             </div>
           </div>
           <div className="col-sm-12 col-md-6">
             <h2>Element project</h2>
             <div className="imagery">
-              <a href="/fireAnt-element-project/index.html"><img src={tomatoe} height="288" width="408" /></a>
+              <a href="/portfolio-react/fireAnt-element-project/index.html"><img src={tomatoe} height="288" width="408" /></a>
             </div>
           </div>
         </div>
@@ -92,13 +93,13 @@ const WebWitchcraft = (props) => {
           <div className="col-sm-12 col-md-6">
             <h2>Responsive Project</h2>
             <div className="imagery">
-              <a href="/fireAnt-responsive-project/index.html"><img src={tomatoe} height="288" width="408" /></a>
+              <a href="/portfolio-react/fireAnt-responsive-project/index.html"><img src={tomatoe} height="288" width="408" /></a>
             </div>
           </div>
           <div className="col-sm-12 col-md-6">
             <h2>Sass Project</h2>
             <div className="imagery">
-              <a href="/fireAnt-sass-project/index.html"><img src={sass2} height="288" width="408" /></a>
+              <a href="/portfolio-react/fireAnt-sass-project/index.html"><img src={sass2} height="288" width="408" /></a>
             </div>
           </div>
         </div>
@@ -106,7 +107,7 @@ const WebWitchcraft = (props) => {
           <div className="col-sm-12 col-md-6">
             <h2>Tribute Site</h2>
             <div className="imagery">
-              <a href="/fireAnt-final-project/index.html"><img src={final2} height="288" width="408" /></a>
+              <a href="/portfolio-react/fireAnt-final-project/index.html"><img src={final2} height="288" width="408" /></a>
             </div>
           </div>
         </div>

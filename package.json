@@ -1,6 +1,6 @@
 {
   "name": "portfolio-react",
-  "homepage": "http://random81.github.io/portfolio-react",
+  "homepage": ".",
   "version": "0.1.0",
   "dependencies": {
     "@babel/cli": "^7.12.10",
@@ -42,7 +42,7 @@
     "lint": "eslint ./",
     "lint:fix": "eslint . --fix",
     "buildDev": "webpack --mode=development --config webpack.config.js && webpack --mode=development --config webpack.config_e6.server.js",
-    "deploy": "gh-pages -d prod",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --mode=production --config webpack.config.front.production.js && webpack --mode=production --config webpack.config_e6.server.js",
     "report_prod": "npm run prod --webpackAnalysis true",
     "report_dev": "npm run dev --webpackAnalysis true",
