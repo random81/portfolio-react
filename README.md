@@ -1,4 +1,4 @@
- Express+React+Nodejs
+ A react/webpack version of my old portfolio site for github pages.
 
 #### This code was successfully run with: 
 1. Node - ^v14.15.0
