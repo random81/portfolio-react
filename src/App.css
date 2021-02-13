@@ -84,6 +84,7 @@ a#kill {
 
 body #terminal textarea {
     font-family: 'white_rabbitregular', Arial, sans-serif;
+    font-size: 1.2em; 
 }
 
 body {
@@ -192,7 +193,7 @@ body textarea {
     width: 12.5%;
     height: 210px;
     background-color: #006E78;
-    outline: 1px solid #006E78;
+    outline: 3px solid #006E78;
     outline-bottom: 0px;
     float: left;
     -webkit-transform: rotateY(90deg);
@@ -203,7 +204,7 @@ body textarea {
     width: 12.5%;
     height: 210px;
     background-color: #03808B;
-    outline: 1px solid #03808B;
+    outline: 3px solid #03808B;
     outline-bottom: 0px;
     float: left;
     -webkit-transform: rotateY(90deg);
@@ -231,8 +232,7 @@ body textarea {
     /*    margin-top: 18%;*/
     margin-left: 25%;
     margin-right: 25%;
-    margin-bottom: 25%;
-    position: absolute;
+    position: relative;
 }
 
 nav {
@@ -240,9 +240,8 @@ nav {
 }
 
 #landscape {
-    position: relative;
+    position: absolute;
     z-index: 500;
-    background: url("../images/castle copy.png") no-repeat bottom;
     background-size: 60%;
     height: auto;
     width: 100%;
@@ -257,6 +256,7 @@ footer p {
 .foot p {
     width: 100%;
     text-align: center;
+    z-index: 1000;
 }
 
 .foot {
@@ -279,6 +279,7 @@ footer p {
 
 #land {
     background-color: #5FD3DD;
+    padding: 10%;
 }
 
 #dragonOuter img {
@@ -481,7 +482,7 @@ div#boxB {
     float: left;
     /* border: 10px solid white; */
     font-size: 23px;
-    background-color: #132229;
+    background-color: #000;
     /*give this css the height for the box*/
     padding-left: 30px;
     padding-right: 30px;
@@ -599,7 +600,7 @@ div#boxA {
     /* border: 10px solid white; */
     font-size: 23px;
     height: 813.6px;
-    background-color: #132229;
+    background-color: #000;
 }
 
 #boxA ul+ul li:nth-of-type(1) {
@@ -694,7 +695,6 @@ main {
 img {
     max-width: 100%;
     vertical-align: middle;
-    margin-left: 11px;
     margin-top: -11px;
 }
 
@@ -1002,4 +1002,10 @@ a.navbar-brand {
 
 .foot {
     color: white;
+}
+
+div#root {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
 }

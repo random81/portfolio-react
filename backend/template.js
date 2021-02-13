@@ -5,7 +5,6 @@ export default () => `<!doctype html>
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>portfolio</title>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <script src = "http://maps.google.com/maps/api/js?sensor=false"></script>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
           <style>

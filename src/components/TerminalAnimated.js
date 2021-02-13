@@ -9,9 +9,6 @@ const TerminalAnimated = (props) => {
   const refUnmounted = useRef(false);
   const textSplitArr = useRef('');
 
-  function cleanUp(storedInterval) {
-    clearInterval(storedInterval);
-  }
   function terminalAnimation() {
     // side effect here is the changing of the DOM
     // we might be able to evaluate refUnmounted by setting it true, so that if it runs again on update, and evaluates to true
