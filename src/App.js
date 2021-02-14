@@ -19,7 +19,7 @@ import logo from '../images/logo.png';
 import homeSelectedIMG from '../images/home-selected.png';
 import Home from './components/Home';
 
-const App = (props) => {
+const App = () => {
   return (
     <div>
       <div id="wrapper">
@@ -34,30 +34,30 @@ const App = (props) => {
                     <Nav className="mr-auto">
                       <Link to="./">
                         <img className="center-block" src={homeSelectedIMG} alt="home" width="29" height="25" />
-                        <label>Home Castle</label>
+                        <span>Home Castle</span>
                       </Link>
                       <Link to="./webwitchcraft">
                         <img className="center-block" src={webGlobIMG} alt="webWitchraft" width="29" height="25" />
-                        <label>Web Witchcraft</label>
+                        <span>Web Witchcraft</span>
                       </Link>
                       <Link to="./webpaintings">
                         <img className="center-block" src={webpaintIMG} alt="webPaintings" width="29" height="25" />
-                        <label>Web Paintings</label>
+                        <span>Web Paintings</span>
                       </Link>
-                      </Nav>
-                    </Navbar.Collapse>
-                  </Navbar>
-                </header>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <Switch>
-          <Route exact path="/portfolio-react/" component={Home} />
-          <Route path="/portfolio-react/webwitchcraft" component={WebWitchcraft} />
-          <Route path="/portfolio-react/webpaintings" component={WebPaintings} />
-        </Switch>
+                    </Nav>
+                  </Navbar.Collapse>
+                </Navbar>
+              </header>
+            </Col>
+          </Row>
+        </Container>
       </div>
+      <Switch>
+        <Route exact path="/portfolio-react/" component={Home} />
+        <Route path="/portfolio-react/webwitchcraft" component={WebWitchcraft} />
+        <Route path="/portfolio-react/webpaintings" component={WebPaintings} />
+      </Switch>
+    </div>
   );
 };
 export default App;

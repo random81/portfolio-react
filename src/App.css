@@ -112,7 +112,6 @@ body header {
 body textarea {
     font-family: 'white_rabbitregular', Arial, sans-serif;
     width: 99.6%;
-    overflow: hidden;
     height: 206.5px;
     background-color: black;
     color: #1978E4;
@@ -120,8 +119,6 @@ body textarea {
     cursor: crosshair;
     padding-top: 30px;
     border-right: 1px solid white;
-    border-bottom: 1px solid black;
-    border-top: 6.9px solid black;
     z-index: 500;
 }
 
@@ -194,7 +191,6 @@ body textarea {
     height: 210px;
     background-color: #006E78;
     outline: 3px solid #006E78;
-    outline-bottom: 0px;
     float: left;
     -webkit-transform: rotateY(90deg);
     transform: rotateY(90deg);
@@ -205,7 +201,6 @@ body textarea {
     height: 210px;
     background-color: #03808B;
     outline: 3px solid #03808B;
-    outline-bottom: 0px;
     float: left;
     -webkit-transform: rotateY(90deg);
     transform: rotateY(90deg);
@@ -217,6 +212,7 @@ body textarea {
     margin: 0 auto;
     position: relative;
     z-index: 600;
+    margin-top: 2px;
 }
 
 #castle img {
@@ -279,7 +275,7 @@ footer p {
 
 #land {
     background-color: #5FD3DD;
-    padding: 10%;
+    padding: 20%;
 }
 
 #dragonOuter img {
@@ -452,6 +448,7 @@ div#vs {
 
 div#lava {
     background-color: #F26522;
+    margin-top: -3px;
 }
 
 #Champion {
@@ -535,35 +532,6 @@ div#boxB {
     margin-top: 200px;
 }
 
-.miniMe {
-    /*background: url("../../images/knight%20copy2a.png") center no-repeat;8/
-    display: inline;
-    background-size: 80%;
-    height: 40px;
-    width: 50px;
-    float: left;
-    margin-top: 223px;
-  }
-  
-  #footBox {
-    width: 271.2px;
-    margin: 0 auto;
-  }
-  
-  body footer {
-    height: 150px;
-    background-color: #0f171b;
-  }
-  
-  body #footer h3 {
-    color: #1978E4;
-    padding: 75px 0;
-    margin: 0px;
-  }
-  
-  #boxA ul:nth-of-type(2) {
-    /*  display:none;*/
-}
 
 div#boxA {
     color: white;
@@ -698,6 +666,12 @@ img {
     margin-top: -11px;
 }
 
+#land img {
+    max-width: 50%;
+    vertical-align: middle;
+    margin-top: -11px;
+    margin: 0 auto;
+}
 
 /**
   * Figures
@@ -748,6 +722,9 @@ h6 {
 a {
     color: #2a7ae2;
     text-decoration: none;
+}
+nav a {
+    padding-top: 15px;
 }
 
 a:visited {
@@ -928,7 +905,7 @@ table td {
         border-radius: 5px;
         text-align: right;
     }
-    .site-nav label[for="nav-trigger"] {
+    .site-nav span[for="nav-trigger"] {
         display: block;
         float: right;
         width: 36px;
@@ -990,7 +967,7 @@ body .navbar-light .navbar-nav .nav-link {
     color: rgb(42 121 209);
 }
 */
-nav label {
+nav span {
     margin-left: 18px;
     padding-top: 20px;
     cursor: pointer;
@@ -1008,4 +985,18 @@ div#root {
     position: absolute;
     margin: 0 auto;
     width: 100%;
+}
+
+#dragon2b {
+    display: none;
+}
+#dragon2c {
+    display: none;
+}
+
+nav img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin-top: -11px;
+    margin-left: 78px;
 }

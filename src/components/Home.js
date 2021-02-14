@@ -1,30 +1,25 @@
 import React, { useEffect, useRef } from 'react';
-import dragonA from '../../images/dragonGraphic.png';
-import dragonB from '../../images/dragonsGraphic2.png';
-import dragonC from '../../images/dragonGraphic3.png';
-import { Container, Row, Col } from 'reactstrap';
-import Foot from './Foot';
+import { Container } from 'reactstrap';
+import dragonAimg from '../../images/dragonGraphic.png';
+import dragonBimg from '../../images/dragonsGraphic2.png';
+import dragonCimg from '../../images/dragonGraphic3.png';
 import TerminalAnimated from './TerminalAnimated';
 import castleCopy from '../../images/castle copy.png';
 import inventory from '../../images/inventory.png';
 
-const Home = (props) => {
+const Home = () => {
   const refUnmounted = useRef(false);
   function loadScripts() {
-    // $('.castleA')[0].style.display = 'none';
-    // $('.castleA').style.display = 'none';
     let opacityTotal = 0;
     let marginTotal = 0;
     let blurTotal = 10;
     let toggle = false;
-    // const a = 0;
     let storedInterval;
     let storedIntervalInv;
     let storedIntervalDragon;
     let storedIntervalSky;
     const rateInv = 12;
-    // let x;
-    let marginTopInvA = $('#challengeHeader2').height() + $('#boxA').height();
+    let marginTopInvA = $('#challengeHeader2').height() + $('#boxA').height() - 3;
     marginTopInvA = `-${marginTopInvA}`;
     // set height for inventory:
     $('#boxB').css('marginTop', `${marginTopInvA}px`);
@@ -50,7 +45,6 @@ const Home = (props) => {
         if ((opacityTotal > 1 && marginTotal <= 0) || ((toggle && marginTotal) <= 0)) {
           clearInterval(storedIntervalInv);
           boxUlTwo.style.marginLeft = '0%';
-          console.log('reached if marginTotal < 0');
           boxUlTwo.style.opacity = 1;
           boxUlTwo.style.WebkitFilter = 'blur(0px)';
           blurTotal = 10;
@@ -79,31 +73,6 @@ const Home = (props) => {
       }
     }
     boxUl.addEventListener('click', toggleDisplay, false);
-    function fixHeights() {
-      const boxBHeightTest = $('#boxB').height();
-      if (boxBHeightTest <= 0) {
-        $('#boxB ul').css('opacity', '0');
-        $('#boxB ul').css('display', 'block');
-      }
-      const lavaForeground = $('#challengeHeader2').height() + $('#Champion_box').height();
-      const lavaForegroundLava = $('#challengeHeader2').height() + $('#lava').height();
-      const boxBHeight = $('#boxB').height();
-
-      if (lavaForeground < lavaForegroundLava && lavaForegroundLava > boxBHeight) {
-        $('#boxB ul').height(lavaForegroundLava);
-        // make lava taller by adding the difference between the parts and making that difference
-      } else if (lavaForeground > boxBHeight) {
-        $('#boxB ul').height(lavaForeground);
-        // make lava taller by adding the difference between the parts and making that difference
-      } else {
-        $('#Champion').css('padding-bottom', '0px');
-        const boxAandHeader = $('#challengeHeader2').height() + $('#boxA').height();
-        // make the bottom exten. champion height should be added diffe
-        const neededAddHeight = boxBHeight - boxAandHeader; // make this the height of chamion
-        $('#Champion').height(neededAddHeight);
-      }
-    }
-    window.addEventListener('resize', fixHeights, false);
     function adjustHeight() {
       if (refUnmounted.current) {
         // check on unmount and initial
@@ -127,7 +96,7 @@ const Home = (props) => {
       // 4*12.5%width of body is the projected height of landscape.
       // use that number to set the margin top for the castleA
 
-      let marginTopInv = $('#challengeHeader2').height() + $('#boxA').height();
+      let marginTopInv = $('#challengeHeader2').height() + $('#boxA').height() - 3;
       marginTopInv = `-${marginTopInv}`;
       // set height for inventory:
       $('#boxB').css('marginTop', `${marginTopInv}px`);
@@ -141,7 +110,7 @@ const Home = (props) => {
     let rotation = 90;
     let skyBool = true;
 
-    function skyTimer(callback1, callback2) {
+    function skyTimer(callback1) {
       // what needs to happen here is there should be a mechanism
       // that allow for the incrimentation of the div number, so once you are done rotating
       // move on the next div
@@ -159,29 +128,24 @@ const Home = (props) => {
         d = 0;
         c = 0;
         callback1();
-        callback2();
-        return skyBool;
       }
 
       if (skyBool) {
         const skyBlock = document.getElementById('landscape').getElementsByClassName('layer')[c].getElementsByTagName('div')[d];
-        if (skyBool === true) {
-          let castleHeight = $('img#castle')[0].height;
-          let terminalWidth = $('#terminal').width();
-          castleHeight *= 0.25;
-          terminalWidth /= 8;
-          castleHeight = castleHeight.toString();
-          terminalWidth = terminalWidth.toString();
-          skyBlock.style.setProperty('height', `${castleHeight}px`);
-          skyBlock.style.setProperty('width', `${terminalWidth}px`);
-          skyBlock.style.webkitTransform = `rotateY(${rotation}deg)`;
-          skyBlock.style.transform = `rotateY(${rotation}deg)`;
-        }
+        let castleHeight = $('img#castle')[0].height;
+        let terminalWidth = $('#terminal').width();
+        castleHeight *= 0.25;
+        terminalWidth /= 8;
+        castleHeight = castleHeight.toString();
+        terminalWidth = terminalWidth.toString();
+        skyBlock.style.setProperty('height', `${castleHeight}px`);
+        skyBlock.style.setProperty('width', `${terminalWidth}px`);
+        skyBlock.style.webkitTransform = `rotateY(${rotation}deg)`;
+        skyBlock.style.transform = `rotateY(${rotation}deg)`;
         if (rotation === 180 && d !== 7) {
           rotation = 90;
           d += 1;
           counter += 1;
-          return d;
         }
 
         if (d % 7 === 0 && d > 0 && rotation === 180) {
@@ -189,65 +153,33 @@ const Home = (props) => {
           c += 1;
           d = 0;
           counter += 1;
-          return c;
         }
         if (skyBool === true) {
           rotation += 9;
-          return rotation;
         }
-      } else {
-
       }
     }
-    // landscapee: absolute(sky overlaps all but if total height was height
-    // of castle this would work.) ? relative(sky and
-    // castle border each other)?->castleA and landscape
-    // separate rows.
-    // castleA: relative,  margin bottm =0
-    // castle  z index 600- for relative, for absolute
-    // land positioning relative, padding 10% relative not necessary acutally
-    // for this landscape aboslue to work, sky blocks total height for horizon needs
-    // to be height of castle image.
-    // the sky blocks need to adjust. flex.. auto prob.
     // each sky block is 0.25 height of castle because 4 rows.
     function skyTrigger(skyRatePar) {
-      storedIntervalSky = setInterval(skyTimer, skyRatePar, fixHeights, adjustHeight);
+      storedIntervalSky = setInterval(skyTimer, skyRatePar, adjustHeight);
     }
     skyTrigger(skyRate);
-
     // this section will use javascript to make sure that the dragon img
     // is located at the center of the land div.
     // this will work with this equation:   dragon_margin_top=420px-(Hieght of dragon)/2
     // event is load of site and upon body width change,
     // or window resize event if it already exists?
-    /***/
-    /* 2 */
     window.addEventListener('resize', adjustHeight, false);
     let fixToggleBool = false;
     function fixToggleHeight() {
       if (!fixToggleBool) {
         fixToggleBool = true;
-        console.log(`fixToggleBool status:${fixToggleBool}`);
         const boxBHeightTest = $('#boxB').height();
         if (boxBHeightTest <= 0) {
           $('#boxB ul').css('opacity', '0');
           $('#boxB ul').css('display', 'block');
         }
-        // shoud be chamionbox heght +challenger2 height - foot height
-        const lavaForeground = $('#challengeHeader2').height() + $('#Champion_box').height();
-        const lavaForegroundLava = $('#challengeHeader2').height() + $('#lava').height();
-        const boxBHeight = $('#boxB').height();
-        if (lavaForeground < lavaForegroundLava && lavaForegroundLava > boxBHeight) {
-          $('#boxB ul').height(lavaForegroundLava);
-          // make lava taller by adding the difference between the parts and making that difference
-        } else if (lavaForeground > boxBHeight) {
-          $('#boxB ul').height(lavaForeground);
-          // make lava taller by adding the difference between the parts and making that difference
-        } else {
-          $('#Champion').css('padding-bottom', '0px');
-        }
       } else {
-        $('#Champion').css('padding-bottom', `${$('#lava').height() * 0.65}px`);
         fixToggleBool = false;
       }
     }
@@ -255,13 +187,11 @@ const Home = (props) => {
 
     let rateDragon = 5;
     // sky related javascript has been moved to effect.js jquery file
-    const dragon = document.getElementById('dragon2');
-    let imgAtt = dragon.getAttribute('src');
+    let dragon = document.getElementById('dragon2');
+    const dragonA = document.getElementById('dragon2');
+    const dragonB = document.getElementById('dragon2b');
+    const dragonC = document.getElementById('dragon2c');
     let rotationZ = 0;
-    /*
-    function dragonTrigger() {
-      timerDragon();
-    } */
     function timerDragon() {
       if (refUnmounted.current) {
         // check on unmount and initial
@@ -272,54 +202,48 @@ const Home = (props) => {
       dragon.removeEventListener('click', timerDragon, false);
       dragon.style.webkitTransform = `rotateZ(${rotationZ}deg)`;
       dragon.style.transform = `rotateZ(${rotationZ}deg)`;
-      function killSpin() {
-        clearInterval(storedIntervalDragon);
-        console.log('reached if opactiy=1 statement');
-        rotationZ = 0;
-        dragon.style.webkitTransform = 'rotateZ(0deg)';
-        rateDragon = 0.5;
-        imgAtt = dragon.getAttribute('src');
-        dragon.addEventListener('click', timerDragon, false);
-        return rotationZ;
-      }
-
-      function resetSpin() {
-        clearInterval(storedIntervalDragon);
-        console.log('reached if opactiy=1 statement');
-        dragon.style.webkitTransform = 'rotateZ(0deg)';
-        rotationZ = 0;
-        rateDragon = 0.5;
-        return dragon.addEventListener('click', timerDragon, false);
-      }
 
       clearInterval(storedIntervalDragon);
       rotationZ += 40;
       rateDragon += 0.09;
       storedIntervalDragon = setInterval(timerDragon, rateDragon);
-      console.log(`chaining z (rotationZ):      ${rotationZ}`);
       // adding the image mid turn so it the loading of img is not noticable.
       // THIS SHOULD BE CHANGED TO HAVE ALL IMAGES
       // PRELOADED, AND SIMPLY ALTERANTE CSS OPACITY LEVELS.
-      if (rotationZ > 1700 && imgAtt === dragonA) {
-        dragon.setAttribute('src', dragonC);
-        dragon.addEventListener('load', killSpin, false);
-      }
-
-      if (rotationZ > 1700 && imgAtt === dragonC) {
-        dragon.setAttribute('src', dragonB);
-        dragon.addEventListener('load', killSpin, false);
-      }
-
-      if (rotationZ > 1700 && imgAtt === dragonB) {
-        dragon.setAttribute('src', dragonA);
-        dragon.addEventListener('load', resetSpin, false);
+      if (rotationZ > 1700 && dragon.getAttribute('src') === dragonA.getAttribute('src')) {
+        dragonA.style.display = 'none';
+        dragonB.style.display = 'block';
+        dragon = dragonB;
+        clearInterval(storedIntervalDragon);
+        rotationZ = 0;
+        dragon.style.webkitTransform = 'rotateZ(0deg)';
+        rateDragon = 0.5;
+        dragon.addEventListener('click', timerDragon, false);
+      } else if (rotationZ > 1700 && dragon.getAttribute('src') === dragonB.getAttribute('src')) {
+        dragonB.style.display = 'none';
+        dragonC.style.display = 'block';
+        dragon = dragonC;
+        clearInterval(storedIntervalDragon);
+        rotationZ = 0;
+        dragon.style.webkitTransform = 'rotateZ(0deg)';
+        rateDragon = 0.5;
+        dragon.addEventListener('click', timerDragon, false);
+      } else if (rotationZ > 1700 && dragon.getAttribute('src') === dragonC.getAttribute('src')) {
+        dragonC.style.display = 'none';
+        dragonA.style.display = 'block';
+        dragon = dragonA;
+        clearInterval(storedIntervalDragon);
+        rotationZ = 0;
+        dragon.style.webkitTransform = 'rotateZ(0deg)';
+        rateDragon = 0.5;
+        dragon.addEventListener('click', timerDragon, false);
       }
     }
     dragon.addEventListener('click', timerDragon, false);
   }
   useEffect(() => {
     loadScripts();
-  }, [dragonA, dragonB, dragonC, castleCopy, inventory, TerminalAnimated]);
+  }, [dragonAimg, dragonBimg, dragonCimg, castleCopy, inventory, TerminalAnimated]);
 
   useEffect(() => {
     if (!refUnmounted.current) {
@@ -384,10 +308,10 @@ const Home = (props) => {
         </div>
         <div className="row">
           <div className="col-md-12">
-            <div id="land">
-              <div id="dragonGround">
-                <div id="dragonOuter"><img id="dragon2" src={dragonA} alt="drgaon" width="630" height="630" /></div>
-              </div>
+            <div id="land" className="foot d-flex align-items-center">
+              <img id="dragon2" src={dragonAimg} alt="drgaon" />
+              <img id="dragon2b" src={dragonBimg} alt="drgaon" />
+              <img id="dragon2c" src={dragonCimg} alt="drgaon" />
             </div>
           </div>
         </div>
@@ -403,7 +327,7 @@ const Home = (props) => {
         <div className="tab">
           <div id="vs">
             Vs
-            </div>
+          </div>
         </div>
         <div className="clear" />
         <div className="row">
