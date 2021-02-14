@@ -10,5 +10,5 @@
    - To build and run the application for development, run "npm run dev"
    - To build and run the application for production, run "npm run prod", for detailed analysis run report option. (See package.json scripts for details)
    - To run the application for development without rebuilding, run "nodemon"
-2. Open [localhost:3000](http://localhost:3000/) in the browser
+2. Open [localhost:3000](http://localhost:3000/) in the browser. Make corrections (i.e. paths) as needed for your routes ('/portfolio-react').
 3. If you encounter an initial problem running the app try making a trivial change in the code and building again. 
