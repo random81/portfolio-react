@@ -53,9 +53,9 @@ const App = () => {
         </Container>
       </div>
       <Switch>
-        <Route exact path="/portfolio-react/" component={Home} />
-        <Route path="/portfolio-react/webwitchcraft" component={WebWitchcraft} />
-        <Route path="/portfolio-react/webpaintings" component={WebPaintings} />
+        <Route exact path="/" component={Home} />
+        <Route path="/webwitchcraft" component={WebWitchcraft} />
+        <Route path="/webpaintings" component={WebPaintings} />
       </Switch>
     </div>
   );

@@ -1,15 +1,15 @@
 import React from 'react';
 import { AppContainer } from 'react-hot-loader';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom'
+import { HashRouter, BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 const render = (App) => {
   ReactDOM.render(
     <AppContainer>
-      <BrowserRouter>
-          <App />
-      </BrowserRouter>
+      <HashRouter basename='portfolio-react'>
+        <App />
+      </HashRouter>
     </AppContainer>,
     document.getElementById('root')
   );
