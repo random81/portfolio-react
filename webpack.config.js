@@ -68,7 +68,6 @@ const config = {
     new CopyPlugin({
       patterns: [
         { from: './fireAnt**/**', to: './' },
-        { from: './web.*/**', to: './' },
       ],
     }),
   ],

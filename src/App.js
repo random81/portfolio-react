@@ -11,7 +11,7 @@ import {
   Navbar,
   Nav,
 } from 'react-bootstrap';
-import WebPaintings from './components/WebPainting';
+import WebPaintings from './components/WebPaintings';
 import WebWitchcraft from './components/WebWitchcraft';
 import webpaintIMG from '../images/webpaint.png';
 import webGlobIMG from '../images/WEBGLOBE.png';

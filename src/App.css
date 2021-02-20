@@ -3,6 +3,10 @@ body .navbar-brand {
     float: none;
 }
 
+.none {
+    display: none;
+}
+
 #terminal ::-moz-selection {
     /* Code for Firefox */
     color: blue;

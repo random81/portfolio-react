@@ -1,5 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import { Container } from 'reactstrap';
+import {
+  Container,
+  Row,
+  Col,
+} from 'reactstrap';
 import dragonAimg from '../../images/dragonGraphic.png';
 import dragonBimg from '../../images/dragonsGraphic2.png';
 import dragonCimg from '../../images/dragonGraphic3.png';
@@ -259,8 +263,8 @@ const Home = () => {
     <div>
       <Container>
         <TerminalAnimated terminalText={terminalMessage} />
-        <div className="row">
-          <div className="col-md-12">
+        <Row>
+          <Col md="12">
             <div id="landscape">
               <div className="layer">
                 <div />
@@ -304,25 +308,25 @@ const Home = () => {
               </div>
             </div>
             <div className="castleA"><img src={castleCopy} alt="castle" id="castle" /></div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
+          </Col>
+        </Row>
+        <Row>
+          <Col md="12">
             <div id="land" className="foot d-flex align-items-center">
               <img id="dragon2" src={dragonAimg} alt="drgaon" />
               <img id="dragon2b" src={dragonBimg} alt="drgaon" />
               <img id="dragon2c" src={dragonCimg} alt="drgaon" />
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
+          </Col>
+        </Row>
+        <Row>
+          <Col md="12">
             <div id="challengeHeader">
               <h2>Your Challenge:</h2>
               <h3>Web Development</h3>
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
         <div className="clear" />
         <div className="tab">
           <div id="vs">
@@ -330,16 +334,16 @@ const Home = () => {
           </div>
         </div>
         <div className="clear" />
-        <div className="row">
-          <div className="col-md-12">
+        <Row>
+          <Col md="12">
             <div id="challengeHeader2">
               <h2>Your Champion:</h2>
               <h3>Me</h3>
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
+          </Col>
+        </Row>
+        <Row>
+          <Col md="12">
             <div id="lava">
               <div id="grass">
                 <div id="Champion_box">
@@ -379,42 +383,41 @@ const Home = () => {
                   </div>
                   <div className="clear" />
                   <div id="Champion" />
-
                   <Container>
-                    <div className="row">
-                      <div className="col-md-4" />
-                      <div className="col-md-4">
+                    <Row>
+                      <Col md="4" />
+                      <Col md="4">
                         <div className="foot">
                           {' '}
                         </div>
-                      </div>
-                      <div className="col-md-4" />
-                    </div>
-                    <div className="row">
-                      <div className="col-md-4" />
-                      <div className="col-md-4">
+                      </Col>
+                      <Col md="4" />
+                    </Row>
+                    <Row>
+                      <Col md="4" />
+                      <Col md="4">
                         <div className="foot d-flex align-items-center">
                           <p>Thank you for visiting!</p>
                         </div>
-                      </div>
-                      <div className="col-md-4" />
-                    </div>
-                    <div className="row">
-                      <div className="col-md-4" />
-                      <div className="col-md-4">
+                      </Col>
+                      <Col md="4" />
+                    </Row>
+                    <Row className="row">
+                      <Col md="4" />
+                      <Col md="4">
                         <div className="foot">
                           {' '}
                         </div>
-                      </div>
-                      <div className="col-md-4" />
-                    </div>
+                      </Col>
+                      <Col md="4" />
+                    </Row>
                   </Container>
                 </div>
               </div>
               <div alt="Brand" id="thedesignSec" />
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
 
       </Container>
     </div>

@@ -1,42 +1,40 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import {
+  Container,
+  Row,
+  Col,
+} from 'reactstrap';
 
-const Foot = (props) => (
+const Foot = () => (
   <div>
     <Container>
-      <div className="row">
-        <div className="col-md-4">
-        </div>
-        <div className="col-md-4">
+      <Row>
+        <Col md="4" />
+        <Col md="4">
           <div className="foot">
             {' '}
           </div>
-        </div>
-        <div className="col-md-4">
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-4">
-        </div>
-        <div className="col-md-4">
+        </Col>
+        <Col md="4" />
+      </Row>
+      <Row>
+        <Col md="4" />
+        <Col md="4">
           <div className="foot d-flex align-items-center">
             <p>Thank you for visiting!</p>
           </div>
-        </div>
-        <div className="col-md-4">
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-4">
-        </div>
-        <div className="col-md-4">
+        </Col>
+        <Col md="4" />
+      </Row>
+      <Row className="row">
+        <Col md="4" />
+        <Col md="4">
           <div className="foot">
             {' '}
           </div>
-        </div>
-        <div className="col-md-4">
-        </div>
-      </div>
+        </Col>
+        <Col md="4" />
+      </Row>
     </Container>
   </div>
 );
