@@ -257,7 +257,7 @@ const Home = () => {
     }
   }, [refUnmounted]);
 
-  const terminalMessage = 'Hello, I am a web developer and software developer. I love learning and using programming languages, creating memorable designs, and trying fancy-shmancy coffee. If you have front end or back end work I would like to help you... ';
+  const terminalMessage = 'Hello, I enjoy computer science, technology, using programming languages, creating memorable designs, and trying fancy-shmancy coffee. If you tech work I would like to help you... ';
   return (
 
     <div>
@@ -323,7 +323,7 @@ const Home = () => {
           <Col md="12">
             <div id="challengeHeader">
               <h2>Your Challenge:</h2>
-              <h3>Web Development</h3>
+              <h3>Technology</h3>
             </div>
           </Col>
         </Row>
